@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.GetFit.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ece976662e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <h3>GETFIT</h3>
+        </div>
+        <div class="icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="menu-items">
+          <li><a class="menu-anchor" href="#home">Home</a></li>
+          <li><a class="menu-anchor" href="#services">Services</a></li>
+          <li><a class="menu-anchor" href="#Bmi">BMI</a></li>
+          <!-- <li><a class="menu-anchor" href="#calorie-section">Track Calorie</a></li> -->
+          <li><a class="menu-anchor" href="#Contact">Contact</a></li>
+        </div>
+      </nav>
+      <section class="home" id="home">
+        <div class="home-container">
+            <h3>Become the best version of yourself</h3>
+            <p>Join us to start your fitness journey with <span id="pp">GETFIT</span></p>
+            <div class="home-btn">
+              <button class="btn">Join Now</button>
+              <button class="btn">Login</button>
+            </div>
+            <div class="home-wrapper">
+              <p>Join the <span id="pp">GETFIT</span> team by registering yourself as a trainer</p>
+              <button class="btn reg">Register</button>
+            </div>
+        </div>
+      </section>
+      <section class="text-wrapper">
+        <div class="textbox">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="db"><path d="M112 96c0-17.7 14.3-32 32-32h16c17.7 0 32 14.3 32 32V224v64V416c0 17.7-14.3 32-32 32H144c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32h48V96zm416 0v32h48c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H528v32c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 96c0-17.7 14.3-32 32-32h16c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"/></svg>
+          <h4>Train with the best trainers to get your dream physique.</h4>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <h2 class="heading">our services</h2>
+        <div class="service-wrapper">
+          <div class="card">
+            <div class="top">
+              <img src="img/workout.jpg" alt="This is an image">
+            </div>
+            <div class="down">
+              <h4>workout routine</h4>
+              <p>We provide customized workout routines according to your body and fitness goals.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <img src="img/diet.jpg" alt="This is an image">
+            </div>
+            <div class="down">
+              <h4>diet plan</h4>
+              <p>Get a diet plan that is made only for your body as per your food choice and taste buds.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <img src="img/pt.jpg" alt="This is an image">
+            </div>
+            <div class="down">
+              <h4>personal trainer</h4>
+              <p>An experienced personal trainer that will guide you and train you to get your desired physique.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bmi" id="bmi">
+        <div class="bmi-wrapper">
+          <h4>Wanna know about your current body status?</h4>
+          <p>Click here to check your <span id="pp">BMI</span></p>
+          <button class="btn bmi-btn">BMI</button>
+        </div>
+        <div class="bmi-container">
+          <h3 class="heading">BMI</h3>
+          <div class="bmi-box">
+            <div class="bmi-content">
+              <h4>Basal Metabolic Rate </h4>
+              <p>BMI is an estimate of body fat and a good measure of your risk for
+                diseases. </p>
+                <table>
+                  <tr>
+                    <th>Range</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr>
+                    <td>less than 18.5</td>
+                    <td>Underweight</td>
+                  </tr>
+                  <tr>
+                    <td>18.5 - 24.9</td>
+                    <td>Normal</td>
+                  </tr>
+                  <tr>
+                    <td>25 - 29.9</td>
+                    <td>Overweight</td>
+                  </tr>
+                  <tr>
+                    <td>30 - 39.9</td>
+                    <td>Obese</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="bmi-counter">
+              <label for="nm">Enter your name</label>
+            <input id="nm" type="text" />
+            <label for="height">Enter your height (in cm)</label>
+            <input id="height" type="text" />
+            <label for="weight">Enter your weight (in Kg)</label>
+            <input id="weight" type="text" />
+            <p id="calc" onclick="bmi()" class="btn">Calculate</p>
+            <p class="btn" id="back">Back</p>
+            <label id="label-bmi" class="l"></label>
+            <div class="result">
+              <p id="ans"></p>
+              <p id="bmi-text" class="bt">
+              Please enter your height in centimeters and weight in kilograms
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Contact">
+        <h3 class="heading">contact us</h3>
+        <div class="contact-container">
+          <h3 id="contact-heading">Get in Touch</h3>
+            <form autocomplete="off">
+              <input type="text" name="name" id="name" placeholder="Enter Your Name " autocomplete="off">
+              <input type="email" name="email" id="email" placeholder="Enter Your Email " autocomplete="off">
+              <input type="mobile number" name="mno" id="mno" placeholder="Enter Your Mobile Number " autocomplete="off">
+              <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Leave A Message" autocomplete="off"></textarea>
+              <button id="submit-btn" name="submit" type="submit">Submit</button>
+            </form>
+        </div>
+      </section>
+      <footer id="footer" >
+        <div class="footer-container">
+          <div class="con-info">
+            <h4>Contact: 7008174534</h4>
+            <h4>Email: bibhashdash522@gmail.com</h4>
+          </div>
+          <div class="trademark">
+            <h4>www.GetFit.com</h4>
+            <h4>Copyright &#169; 2022 GetFit. All rights reserved.</h4>
+          </div>
+          <div class="address">
+            <h4>Bhubaneshwar | 751020</h4>
+            <h4>Odisha | India.</h4>
+          </div>
+        </div>
+      </footer>
+</body>
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>
